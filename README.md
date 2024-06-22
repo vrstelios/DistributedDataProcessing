@@ -43,12 +43,12 @@ private static final String SQLITE_URL = "jdbc:sqlite:sample.db";
 `javac Main.java`
 `java Main`
 
-## Με Docker
+## With Docker
 1. Clone the repository: `git clone https://github.com/yourusername/distributed-data-processing.git`
 `cd distributed-data-processing`
 2. Run the following command to build and run the Docker container: `docker-compose up --build`
 
-## Αλγόριθμοι
+## Algorithms
 ### Pipelined Hash Join
 The algorithm Pipelined Hash Join used for the connection two database which saved the two databases (SQLite και Redis).
 
