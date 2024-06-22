@@ -1,29 +1,29 @@
 # Distributed Data Processing
 
-Αυτό το project αναπτύσσει ένα πρόγραμμα που γεμίζει με τυχαίες εγγραφές δύο πίνακες σε δύο διαφορετικές βάσεις δεδομένων (SQLite, Redis) και υλοποιεί εξωτερικά αλγόριθμους σύνδεσης δεδομένων, όπως createTable, insertData, pipelined hash join και semi-join.
+This project develops a program that populates with random records two tables in two different databases (SQLite, Redis) and implements external data join algorithms such as createTable, insertData, pipelined hash join and semi-join.
 
-## Σκοπός
+## Purpose
 
-Ο σκοπός αυτής της εργασίας είναι η ανάπτυξη ενός συστήματος που:
-- Δημιουργεί και γεμίζει βάσεις δεδομένων με τυχαίες εγγραφές.
-- Υλοποιεί αλγόριθμους σύνδεσης δεδομένων pipelined hash join και semi-join.
+The purpose of this project is to develop a system that:
+- Creates and populates databases with random records.
+- Implements pipelined hash join and semi-join algorithms.
 
-## Λειτουργίες
+## Functions
 
-Το πρόγραμμα περιλαμβάνει τις εξής λειτουργίες:
-1. Δημιουργία και γέμισμα των βάσεων δεδομένων με τυχαίες εγγραφές.
-2. Υλοποίηση pipelined hash join και semi-join αλγορίθμων.
+This program include the following functions:
+1. Create and populates the database with random records.
+2. Implement pipelined hash join and semi-jion algorithm.
 
-## Προαπαιτούμενα
+## Prerequisites
 
 - Java Development Kit (JDK)
 - Docker (αν θέλεις να τρέξεις το project με Docker)
 - Redis
 - SQLite
 
-## Διαμόρφωση
+## Configuration
 
-Για να τρέξετε το project, πρέπει να ρυθμίσετε τα στοιχεία των βάσεων δεδομένων στις κατάλληλες μεταβλητές στη `main` κλάση.
+To run the project, you need to set the database elements to the appropriate variables in the `main` class.
 
 
 ```java 
@@ -33,24 +33,24 @@ private static final String SQLITE_URL = "jdbc:sqlite:sample.db";
 ```
  
 
-## Οδηγίες Εκτέλεσης
+## Execution instructions
 
-## Χωρίς Docker
-1. Κλωνοποιήστε το repository: `git clone https://github.com/yourusername/distributed-data-processing.git`
+## Without Docker
+1. Clone the repository: `git clone https://github.com/yourusername/distributed-data-processing.git`
 `cd distributed-data-processing`
-2. Ρυθμίστε τα στοιχεία των βάσεων δεδομένων στη main.java.
-3. Εκτελέστε την `main.java` μέσω του IDE σας ή από τη γραμμή εντολών:
+2. Configure the database data in the `main.java`.
+3. Run the `main.java` via your IDE or from the command line:
 `javac Main.java`
 `java Main`
 
 ## Με Docker
-1. Κλωνοποιήστε το repository: `git clone https://github.com/yourusername/distributed-data-processing.git`
+1. Clone the repository: `git clone https://github.com/yourusername/distributed-data-processing.git`
 `cd distributed-data-processing`
-2. Εκτελέστε την παρακάτω εντολή για να κατασκευάσετε και να τρέξετε το Docker container: `docker-compose up --build`
+2. Run the following command to build and run the Docker container: `docker-compose up --build`
 
 ## Αλγόριθμοι
 ### Pipelined Hash Join
-Ο αλγόριθμος Pipelined Hash Join χρησιμοποιείται για τη σύνδεση δύο συνόλων δεδομένων που αποθηκεύονται στις δύο βάσεις δεδομένων (SQLite και Redis).
+The algorithm Pipelined Hash Join used for the connection two database which saved the two databases (SQLite και Redis).
 
 ### Semi-Join
-Ο αλγόριθμος Semi-Join χρησιμοποιείται για τη σύνδεση δύο συνόλων δεδομένων με έναν τρόπο που φιλτράρει τα δεδομένα του ενός συνόλου με βάση τα δεδομένα του άλλου.
+The Semi-Join algorithm is used to join two data sets in a way that filters the data of one set based on the data of the other.
