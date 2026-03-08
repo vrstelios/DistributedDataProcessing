@@ -75,5 +75,3 @@ The Semi-Join algorithm is used to join two data sets in a way that filters the 
 [DoctorVerRossi](https://github.com/vrstelios)
 
 ---
-
-If you find this project helpful, please give it a star on GitHub!
